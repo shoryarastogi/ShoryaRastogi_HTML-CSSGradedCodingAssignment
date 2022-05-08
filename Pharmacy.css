@@ -1,0 +1,135 @@
+#img{
+    z-index: -1;
+    border: 2px solid steelblue;
+    animation-name: advertisement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 100%;
+}
+
+#ani1{
+    opacity: 0;
+}
+
+@keyframes advertisement{
+    
+    0%{background-image: url(Images/Animation/ani1.jpg);}
+    25%{background-image: url(Images/Animation/ani2.png);}
+    50%{background-image: url(Images/Animation/ani3.jpg);}
+    75%{background-image: url(Images/Animation/ani4.jpg);}
+    100%{background-image: url(Images/Animation/ani5.jpg);}
+}
+
+body{
+    height: auto;
+    margin: 0%;
+}
+
+header h1{
+    background-color: grey;
+    color: white;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+}
+
+h4{
+    color:rgb(27, 77, 124);
+}
+
+#navigate{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+    
+}
+
+.menu{
+    margin: 0%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover{
+    background-color: rgba(0,0,0);
+}
+
+.menu li:nth-child(2):hover #dropdown_01,
+.menu li:nth-child(3):hover #dropdown_02{
+    display: block;
+}
+
+#dropdown_01, #dropdown_02{
+    width: auto;
+    max-width: 100px;
+    display: none;
+    background-color: whitesmoke;
+    
+    padding: 0%;
+    margin: 0%;
+    position: absolute ;
+}
+
+#dropdown_01 li a, #dropdown_02 li a{
+    color: lightblue;
+}
+
+#dropdown_01 li, #dropdown_02 li{
+    background-color: white;
+    
+}
+
+#dropdown_01 li:hover, #dropdown_02 li:hover{
+    background-color: rgb(150, 212, 150);
+}
+
+#covidcare{
+    margin: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.cc{
+    position: relative;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 5px;
+    width: 290px;
+    height: 300px;
+    border: 2px solid gray;
+    display: inline-block;
+}
+
+.cc img{
+    margin: auto;
+    border-radius: 10px;
+    width: 150px;
+    height: 100px;
+}
+
+button{
+    background-color: rgb(250, 234, 230);
+    width: 100%;
+    border: 1px solid blue;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 4px;
+    padding: 10px 24px;
+}
+
+
+button:active{
+    background-color: rgb(0, 255, 76);
+    transform: scale(1.1);
+}

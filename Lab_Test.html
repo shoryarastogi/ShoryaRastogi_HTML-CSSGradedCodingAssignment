@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="Lab_Test.css">
+</head>
+
+<body>
+    <section id="side">
+        <img src="Images/Lab-Test/lab-test.jpg">
+    </section>
+    <section id="main">
+        <form action="">
+            
+            <article>
+                <div class="contactDetails">
+                    <h1>Your Contact details</h1>
+                </div>
+                <h3>Name</h3>
+                <input type="text" title="name" required spellcheck="true">
+
+                <h3>Patient Id (if exists)</h3>
+                <input type="number" min="000000" max="999999" required>
+                <h3>Phone No</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+                <h3>Email Address</h3>
+                <input type="email" required>
+            </article>
+
+            <article>
+                <div class="address">
+                    <h2>Your Address</h2>
+                </div>
+                <h3>H:No</h3>
+                <input type="text" required>
+
+                <h3>Street</h3>
+                <input type="text" required>
+
+                <h3>Area</h3>
+                <input type="text" required>
+
+                <h3>District</h3>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Hyderabad Urban">Hyderabad Urban</option>
+                    <option value="Hyderabad Rural">Hyderabad Rural</option>
+                    <option value="Rangareddy">Rangareddy</option>
+                </select>
+            </article>
+
+            <article>
+                <h3>Choose the issue Type</h3>
+                <p>Check atleast one box without fail</p>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option4" value="TSH">
+                <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                <br>
+                <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                <label for="c5">Glucose Test</label>
+            </article>
+
+            <article>
+                <h3>Do you want hard copy of the report?</h3>
+                <input type="radio" id="c6" name="option" value="True" required>
+                <label for="c6">Yes</label>
+                <br>
+                <input type="radio" id="c7" name="option" value="False">
+                <label for="c7">No</label>
+            </article>
+
+            <article>
+                <h3>Choose your comfortable date and time:</h3>
+                <h3>Date</h3>
+                <input type="date" id="c8" name="date" value="date">
+                <h3>Time</h3>
+                <input type="time" id="c9" name="time" value="time">
+            </article>
+
+
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
